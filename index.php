@@ -12,6 +12,7 @@ print_r($year);
 
 /*------------------------Code for the assignment-------------------------------------*/
 $str = "Hi Welcome";
+
 $obj = new main();
 $result = $obj->stringReplace($date);
 $obj->stringCompare($result,$tar);
