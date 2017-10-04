@@ -31,9 +31,6 @@ public function __construct(){
 	
 }
 
-public function __destruct(){
-	main::printStr("<br/><br/>Thank you!");
-}
 static public function printStr($str) {
 		print_r($str);
 }
@@ -115,5 +112,10 @@ public function printLeapYear($year) {
 		printLeap($isleap,$year[$i]);
 	}
 }
+
+public function __destruct(){
+	main::printStr("<br/><br/>Thank you!");
+}
+
 }
 ?>
