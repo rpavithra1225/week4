@@ -37,12 +37,12 @@ static public function printStr($str) {
 
 public function stringReplace($date){
 	$result = str_replace('-', '/', $date);
-	main::printStr("<br/>2. Replaced '-' with '/': <br/>".$result. "<br/>");
+	main::printStr("<br/>2. Replaced '-' with '/': ".$result. "<br/>");
 	return $result;
 }
 
 public function stringCompare($result,$tar) {
-	main::printStr("<br/>3. String comaprison: <br/>");
+	main::printStr("<br/>3. String comaprison: ");
 		$cmp =strcmp($result,$tar);
 		if ($cmp > 0) {
 			//$this->html .="The future <br/>";
@@ -62,28 +62,28 @@ public function printPosition($result) {
 	while (($p = strpos($result, '/', $p+1)) !== false) {
 		$pos[] = $p ;
 }
-	main::printStr("<br/>4.The positions of '/' are:<br/>".implode(" ", $pos)."<br/>");
+	main::printStr("<br/>4.The positions of '/' are: ".implode(" ", $pos)."<br/>");
 }
 
 public function printWordCount($str) {
 
-	main::printStr("<br/>5.No. of words in '$str:'<br/>".str_word_count($str)."<br/>");
+	main::printStr("<br/>5.No. of words in '$str:' ".str_word_count($str)."<br/>");
 }
 
 public function printStrlen($str) {
-	main::printStr("<br/>6.String length of '$str':<br/>".strlen($str)."<br/>");
+	main::printStr("<br/>6.String length of '$str': ".strlen($str)."<br/>");
 }
 
 public function printAsciival($str) {
-	main::printStr("<br/>7.ASCII value of first character of '$str':<br/>".ord(substr($str,0))."<br>");
+	main::printStr("<br/>7.ASCII value of first character of '$str': ".ord(substr($str,0))."<br>");
 }
 
 public function printSubStr($date) {
-	main::printStr("<br/>8.The last two characters of '$date':<br/>".substr($date,-2)."<br/>");
+	main::printStr("<br/>8.The last two characters of '$date': ".substr($date,-2)."<br/>");
 }
 
 public function printDate($result) {
-	main::printStr("<br/>9.'$result' in array:<br/>".implode(" ", explode('/', $result))."<br>");
+	main::printStr("<br/>9.'$result' in array: ".implode(" ", explode('/', $result))."<br>");
 }
 
 public function printLeapYear($year) {
